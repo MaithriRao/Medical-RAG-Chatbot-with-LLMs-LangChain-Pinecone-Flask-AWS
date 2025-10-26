@@ -16,6 +16,9 @@
     devShells = forAllSystems (system: let
       pkgs = import nixpkgs {
         inherit system;
+        overlays = [
+          (import ./nix/overlays.nix)
+        ];
         config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
           "postman"
         ];
@@ -26,6 +29,7 @@
         langchain
         langchain-community
         langchain-openai
+        langchain-pinecone
         sentence-transformers
         seaborn
         nltk
@@ -35,6 +39,9 @@
         pypdf
         dvc-s3
         flask-cors
+        pinecone-client
+        ipywidgets
+        widgetsnbextension
       ]);
     in {
       default = pkgs.mkShellNoCC {
