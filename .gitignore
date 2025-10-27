@@ -3,3 +3,4 @@
 /__pycache__/
 .ipynb_checkpoints/
 .trials-checkpoint.ipynb
+src/__pycache__/
