@@ -7,7 +7,7 @@ This repository features a Retrieval-Augmented Generation (RAG) Medical Chatbot 
 This application is built around three core pillars: Cloud Infrastructure, AI/ML, and Deployment Automation.
 
 | Layer | Component | Description |
-
+| :--- | :--- | :--- |
 | **Cloud** | **AWS (ECR, EC2)** | Secure container image registry and production host. |
 | **AI/ML** | **OpenAI, Pinecone** | LLM for generation and high-speed vector database for knowledge retrieval. |
 | **Framework** | **LangChain** | Orchestrates the RAG flow and context management. |
